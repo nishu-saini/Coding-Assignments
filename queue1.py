@@ -4,7 +4,7 @@ class Queue:
     def __init__(self) -> None:
         self.que = deque()
     
-    # stack functions such as push, pop, isEmpty, peek..
+    # queue functions, i.e., enqueue, dequeue, isEmpty, peek
     def enqueue(self, data):
         
         self.que.append(data)
