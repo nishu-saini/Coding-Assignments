@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation Form</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form id="myForm">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <div class="error-message" id="nameError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <div class="error-message" id="emailError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="[0-9]{10}"
+          required
+        />
+        <div class="error-message" id="phoneError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          minlength="6"
+          required
+        />
+        <div class="error-message" id="passwordError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" required />
+        <div class="error-message" id="ageError"></div>
+      </div>
+
+      <div class="form-group">
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required />
+        Male
+        <br />
+        <input type="radio" id="female" name="gender" value="female" required />
+        Female
+        <br />
+        <input type="radio" id="other" name="gender" value="other" required />
+        Other
+        <div class="error-message" id="genderError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required />
+        <div class="error-message" id="dateError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color" required />
+        <div class="error-message" id="colorError"></div>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
