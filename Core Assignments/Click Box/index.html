@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click Box</title>
+
+    <style>
+      .box {
+        width: 300px;
+        height: 300px;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: large;
+        font-weight: 600;
+        color: #faf6f6;
+        margin: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">
+      <p>Click Me!</p>
+    </div>
+
+    <!-- Javascript -->
+    <script>
+      let div = document.querySelector(".box");
+
+      // add event listener to div..
+      div.addEventListener("click", () => {
+        div.style.height = "600px";
+        div.style.width = "600px";
+        div.style.backgroundColor = "yellow";
+
+        div.innerHTML = `<p>Well Done!</p>`;
+        div.style.color = "green";
+      });
+    </script>
+  </body>
+</html>

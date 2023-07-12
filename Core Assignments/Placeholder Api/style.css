@@ -1,0 +1,19 @@
+body {
+  width: 720px;
+  margin: auto;
+}
+
+.blogItem {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #cee5e6;
+}
+
+.blogItem h2 {
+  margin-top: 0;
+}
+
+.blogItem p {
+  margin-bottom: 5px;
+}
