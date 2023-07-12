@@ -1,10 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .gallery {
+  margin-left: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 10px;
 }
 
 .gallery-item {
-  width: 100%;
-  height: auto;
+  height: 300px;
+  width: 300px;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
 }
